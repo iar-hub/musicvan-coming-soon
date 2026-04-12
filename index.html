@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Coming Soon</title>
+  <meta charset="UTF-8">
+  <title>musicvan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body {
+    /* --- Retro colour palette --- */
+    :root {
+      --mv-orange: #e86f2a;
+      --mv-cream: #f7f3e9;
+      --mv-charcoal: #2b2b2b;
+      --mv-grain: rgba(0,0,0,0.04);
+    }
+
+    /* --- Global reset --- */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: #000;
+      background: var(--mv-cream);
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: var(--mv-charcoal);
+      position: relative;
+      overflow: hidden;
     }
-    img {
-      max-width: 90%;
-      height: auto;
+
+    /* --- Subtle film grain overlay --- */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--mv-grain);
+      pointer-events: none;
+      mix-blend-mode: multiply;
+    }
+
+    /* --- Retro frame --- */
+    .frame {
+      border: 6px solid var(--mv-orange);
+      padding: 40px 60px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 0 40px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    /* --- Logo --- */
+    .logo {
+      max-width: 260px;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    /* --- Retro tagline --- */
+    .tagline {
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mv-orange);
+      margin-top: 10px;
+    }
+
+    /* --- Footer strip --- */
+    .footer {
+      position: absolute;
+      bottom: 30px;
+      font-size: 0.75rem;
+      opacity: 0.6;
+      letter-spacing: 0.05em;
     }
   </style>
 </head>
+
 <body>
-  <img src="coming-soon.jpg" alt="Coming Soon">
+  <div class="frame">
+    <img src="assets/musicvan-logo.png" alt="musicvan Logo" class="logo">
+    <div class="tagline">Vinyl Care • Retro Spirit • Modern Craft</div>
+  </div>
+
+  <div class="footer">musicvan — Placeholder Site</div>
 </body>
 </html>
