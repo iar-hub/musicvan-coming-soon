@@ -2,85 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>musicvan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>musicvan - coming soon!</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/musicvan-favicon.png">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="musicvan - coming soon!">
+  <meta property="og:description" content="premium vinyl care & sleeves, launching soon.">
+  <meta property="og:image" content="assets/musicvan-social-banner.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://musicvan.github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="musicvan - coming soon!">
+  <meta name="twitter:description" content="premium vinyl care & sleeves, launching soon.">
+  <meta name="twitter:image" content="assets/musicvan-social-banner.png">
+
+  <!-- Styles -->
   <style>
-    /* --- Retro colour palette --- */
-    :root {
-      --mv-orange: #e86f2a;
-      --mv-cream: #f7f3e9;
-      --mv-charcoal: #2b2b2b;
-      --mv-grain: rgba(0,0,0,0.04);
-    }
-
-    /* --- Global reset --- */
-    * {
+    body {
+      background-color: #ffffff;
+      color: #ff6600;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
     }
-
-  body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--mv-cream);
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: var(--mv-charcoal);
-  position: relative;
-  overflow: hidden;
-}
-
-.frame {
-  border: 10px solid var(--mv-orange);
-  padding: 8vh 10vw;
-  text-align: center;
-  background: white;
-  box-shadow: 0 0 80px rgba(0,0,0,0.1);
-  width: 90vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  max-width: 500px;
-  width: 45vw;
-  margin-bottom: 40px;
-  opacity: 0.95;
-}
-
-.tagline {
-  font-size: 1.3rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--mv-orange);
-  margin-top: 20px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 20px;
-  font-size: 0.8rem;
-  opacity: 0.6;
-  letter-spacing: 0.05em;
-}
-
-}
+    img {
+      width: 220px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: lowercase;
+    }
   </style>
 </head>
-
 <body>
-  <div class="frame">
-    <img src="assets/musicvan-logo.png" alt="musicvan Logo" class="logo">
-    <div class="tagline">Vinyl Care • Retro Spirit • Modern Craft</div>
-  </div>
-
-  <div class="footer">musicvanshop.co.uk</div>
+  <img src="assets/musicvan-logo.png" alt="musicvan logo">
+  <h1>musicvan - coming soon!</h1>
 </body>
 </html>
