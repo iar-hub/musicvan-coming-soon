@@ -4,70 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>musicvan - coming soon!</title>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/musicvan-favicon.png">
 
-  <!-- Open Graph / Social Preview -->
-  <meta property="og:title" content="musicvan - coming soon!">
-  <meta property="og:description" content="premium vinyl care & sleeves, launching soon.">
-  <meta property="og:image" content="assets/musicvan-social-banner.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://musicvan.github.io">
+  <style>
+    /* Full-screen layout */
+    body {
+      background-color: #ffffff;
+      color: #ff6600;
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="musicvan - coming soon!">
-  <meta name="twitter:description" content="premium vinyl care & sleeves, launching soon.">
-  <meta name="twitter:image" content="assets/musicvan-social-banner.png">
+    /* Logo styling */
+    img {
+      width: 40vw;         /* scales with viewport width */
+      max-width: 600px;    /* caps size on large screens */
+      height: auto;
+      margin-bottom: 20px;
+    }
 
-  <!-- Styles -->
- <style>
-  body {
-    background: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      #fff4e6 40%,
-      #ffe0cc 100%
-    );
-    color: #ff6600;
-    font-family: 'Inter', sans-serif;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+    /* Text styling */
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: lowercase;
+      margin: 0;
+    }
 
-  img {
-    width: 40vw;
-    max-width: 600px;
-    height: auto;
-    margin-bottom: 20px;
-  }
+    /* Optional fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: lowercase;
-    margin: 0;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  img, h1 {
-    animation: fadeIn 1.2s ease-out;
-  }
-</style>
-
+    img, h1 {
+      animation: fadeIn 1.2s ease-out;
+    }
+  </style>
 </head>
 <body>
   <img src="assets/musicvan-logo.png" alt="musicvan logo">
   <h1>musicvan - coming soon!</h1>
 </body>
 </html>
+
